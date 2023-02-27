@@ -176,10 +176,12 @@ const Content = () => {
         
         {/* POSTS */}
         <Box sx={{
-            width: '100%',
             height: '90vh',
             backgroundColor: 'background.primary',
             overflowY: 'scroll',
+            '&::-webkit-scrollbar': {
+                display: 'none',
+            },
             padding: '20px',
         }}>
             <Masonry 
